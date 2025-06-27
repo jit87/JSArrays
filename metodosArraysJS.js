@@ -84,3 +84,12 @@ console.log(aleatorios);  //Devuelve [ 1, 2, "b", "878ga78dda", 1.8, 5, 100 ]
 const eliminado = aleatorios.pop();
 console.log(eliminado);  //Devuelve 100
 console.log(aleatorios);  //Devuelve [ 1, 2, "b", "878ga78dda", 1.8, 5 ]
+
+//Uso de .shift()
+const primerEliminado = aleatorios.shift(); // (array original: [1,2,"b","878ga78dda",1.8, 5])
+console.log(primerEliminado);  //Devuelve 1
+console.log(aleatorios);  //Devuelve [ 2, "b", "878ga78dda", 1.8, 5 ]
+
+//Uso de .unshift()
+aleatorios.unshift("nuevoInicio");    
+console.log(aleatorios);  //Devuelve [ 'nuevoInicio', 2, 'b', '878ga78dda', 1.8, 5 ]
